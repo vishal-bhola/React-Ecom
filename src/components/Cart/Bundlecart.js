@@ -3,16 +3,16 @@ import Heading from "../Reusable/Heading"
 import Img from "gatsby-image"
 
 
-const getCaty = items => {
-    let holdItems = items.map(items => {
-          return items.node.category
-    })
+// const getCaty = items => {
+//     let holdItems = items.map(items => {
+//           return items.node.category
+//     })
 
-    let holdCategories = new Set(holdItems)
-    let categories = Array.from(holdCategories)
-    categories = ["all", ...categories]
-    return categories
-}
+//     let holdCategories = new Set(holdItems)s
+//     let categories = Array.from(holdCategories)
+//     categories = ["all", ...categories]
+//     return categories
+// }
 
 
 
@@ -22,7 +22,7 @@ export default class Bundlecart extends Component {
         this.state={
             bundles: props.bundles.edges,
             mycourses: props.bundles.edges,
-            mycategories: getCaty(props.bundles.edges)
+            // mycategories: getCaty(props.bundles.edges)
         }
     }
 
